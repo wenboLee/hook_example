@@ -9,7 +9,7 @@ void main(List<String> arguments) {
     Git.commitMsg: commitMsg,
     Git.preCommit: preCommit
   };
-  GitHooks.call(arguments, params);
+  GitHooks.hookCall(arguments, params);
 }
 
 Future<bool> commitMsg() async {

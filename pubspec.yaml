@@ -12,4 +12,4 @@ environment:
 
 dev_dependencies:
   lints: ^1.0.0
-  dart_git_hooks: ^0.2.4
+  dart_git_hooks: ^0.2.6+1
