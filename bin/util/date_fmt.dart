@@ -1,9 +1,8 @@
-import 'dart:io' as IO;
+import 'dart:io' as dart_io;
 
-/// 日期格式化
 class DateFmt {
   static String durationIndicatorBuilder(Duration duration) {
-    IO.HttpDate date = IO.HttpDate();
+    dart_io.HttpDate date = dart_io.HttpDate();
     print('date = $date');
 
     const separator = ':';

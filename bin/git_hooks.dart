@@ -40,7 +40,7 @@ Future<bool> preCommit() async {
     print('dart analyze 分析中... ${result.stdout}');
     print("dart analyze 分析完成 - ${DateTime.now()} \t 返回码：${result.exitCode}");
     print('dart analyze err: ${result.stderr}');
-    if (result.exitCode != 0) return false;
+    if ('${result.stderr}'.isNotEmpty) return false;
   } catch (e) {
     print('错误：$e');
     return false;
